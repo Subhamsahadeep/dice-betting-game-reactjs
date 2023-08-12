@@ -1,0 +1,148 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.width-full {
+  width: 100%;
+}
+.height-full {
+  height: 100%;
+}
+.center-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-dice {
+  border: 1px solid #d0d0d0;
+  padding-bottom: 10px;
+  background: #000;
+  color: #fff;
+  width: calc((60%) / 6);
+  margin: 5px;
+  font-size: 20px;
+}
+
+.card-dice img {
+  width: 100%;
+}
+
+.card-dice button {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 2px;
+  cursor: pointer;
+}
+.card-dice .dice-number {
+  font-size: 20px;
+}
+.card-dice .price {
+  font-size: 15px;
+}
+
+.pad-5 {
+  padding: 5px;
+}
+
+.card-dice button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-dice {
+    width: calc((90%) / 3);
+    margin: 5px;
+  }
+}
+
+.start-game button,
+.reset button {
+  padding: 10px 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+}
+
+.start-game button {
+  background: #0000ff;
+  color: #fff;
+  padding: 15px;
+  margin: 10px;
+}
+.start-game button:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #0000ff;
+  border-radius: 15px;
+}
+
+.reset button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.winner img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.rules {
+  border-left: 1px solid green;
+  padding: 10px;
+  text-align: left;
+  color: #808080;
+}
+
+.rules .item {
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  background-color: seashell;
+  height: 75px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.time-limit {
+  color: #808080;
+  font-size: 30px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: fadeinOut linear 1s infinite alternate;
+}
+
+@keyframes fadeinOut {
+  0% {
+    border: 1px solid #fff;
+  }
+  100% {
+    border: 1px solid #000;
+  }
+}
